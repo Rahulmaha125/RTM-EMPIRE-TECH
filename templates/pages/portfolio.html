@@ -1,0 +1,262 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | RTM Empire Tech</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/portfolio.css' %}">
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+    <div class="logo-area">
+
+        <div class="logo-box">
+            <img src="{% static 'images/logo1.png' %}" alt="Logo">
+        </div>
+
+        <div class="logo-text">
+            <h2>RTM EMPIRE TECH</h2>
+            <p>Building Digital Empires</p>
+        </div>
+
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'services' %}">Services</a></li>
+        <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+    </ul>
+
+</nav>
+
+<!-- HERO SECTION -->
+
+<section class="portfolio-hero">
+
+    <div class="hero-content">
+
+        <h1>OUR PORTFOLIO</h1>
+
+        <p>
+            Showcasing Innovation, Quality and Digital Excellence
+        </p>
+
+        <a href="{% url 'portfolio' %}" class="hero-btn">
+            View Projects
+        </a>
+
+    </div>
+
+</section>
+
+<!-- FEATURED PROJECTS -->
+
+<section class="portfolio-section">
+
+    <div class="section-title">
+        <h2>FEATURED PROJECTS</h2>
+    </div>
+
+    <div class="portfolio-grid">
+
+        <!-- Project 1 -->
+
+        <div class="project-card">
+
+            <img src="{% static 'images/project-1.jpg' %}" alt="Project">
+
+            <div class="project-content">
+
+                <h3>Business Website</h3>
+
+                <p>
+                    Premium corporate website developed for modern businesses.
+                </p>
+
+                <span>HTML • Dot Nate • Python</span>
+
+            </div>
+
+        </div>
+
+        <!-- Project 2 -->
+
+        <div class="project-card">
+
+            <img src="{% static 'images/project-2.jpg' %}" alt="Project">
+
+            <div class="project-content">
+
+                <h3>Medino Web Application</h3>
+
+                <p>
+                    Custom management system with database integration.
+                </p>
+
+                <span>Python • Django • SQL</span>
+
+            </div>
+
+        </div>
+
+        <!-- Project 3 -->
+
+        <div class="project-card">
+
+            <img src="{% static 'images/project-3.jpg' %}" alt="Project">
+
+            <div class="project-content">
+
+                <h3>AI Solution</h3>
+
+                <p>
+                    Intelligent automation and AI-powered analytics.
+                </p>
+
+                <span>Python • AI • ML</span>
+
+            </div>
+
+        </div>
+
+        <!-- Project 4 -->
+
+        <div class="project-card">
+
+            <img src="{% static 'images/project-4.jpg' %}" alt="Project">
+
+            <div class="project-content">
+
+                <h3>E-Commerce Store</h3>
+
+                <p>
+                    Secure online shopping platform with payment gateway.
+                </p>
+
+                <span>Python • SQL • Payment API</span>
+
+            </div>
+
+        </div>
+
+        <!-- Project 5 -->
+
+        <div class="project-card">
+
+            <img src="{% static 'images/project-5.jpg' %}" alt="Project">
+
+            <div class="project-content">
+
+                <h3>Job Portal</h3>
+
+                <p>
+                    Modern recruitment platform with admin dashboard.
+                </p>
+
+                <span>Django • SQL • Authentication</span>
+
+            </div>
+
+        </div>
+
+        <!-- Project 6 -->
+
+        <div class="project-card">
+
+            <img src="{% static 'images/project-6.jpg' %}" alt="Project">
+
+            <div class="project-content">
+
+                <h3>Custom ERP System</h3>
+
+                <p>
+                    Business process automation and reporting dashboard.
+                </p>
+
+                <span>Python • Django • Analytics </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ACHIEVEMENTS -->
+
+<section class="achievement-section">
+
+    <div class="section-title">
+        <h2>PROJECT ACHIEVEMENTS</h2>
+    </div>
+
+    <div class="achievement-grid">
+
+        
+
+        <div class="achievement-card">
+            <h2>100%</h2>
+            <p>Client Satisfaction</p>
+        </div>
+
+        <div class="achievement-card">
+            <h2>24/7</h2>
+            <p>Support Available</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- TECHNOLOGIES -->
+
+<section class="technology-section">
+
+    <div class="section-title">
+        <h2>TECHNOLOGIES USED</h2>
+    </div>
+
+    <div class="tech-grid">
+
+        <div class="tech-card">Python</div>
+        <div class="tech-card">Django</div>
+        <div class="tech-card">SQL</div>
+        <div class="tech-card">HTML5</div>
+        <div class="tech-card">CSS3</div>
+        <div class="tech-card">JavaScript</div>
+
+    </div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="portfolio-cta">
+
+    <h2>Let's Build Your Next Project</h2>
+
+    <p>
+        Partner with RTM Empire Tech and transform your ideas into powerful digital solutions.
+    </p>
+
+    <a href="{% url 'quote' %}" class="hero-btn">
+        Start Your Project
+    </a>
+
+</section>
+
+<footer>
+    © 2026 RTM Empire Tech. All Rights Reserved.
+</footer>
+
+</body>
+</html>

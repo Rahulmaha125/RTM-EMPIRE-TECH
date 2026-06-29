@@ -1,0 +1,145 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | RTM Empire Tech</title>
+
+
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
+
+
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo-area">
+        <div class="logo-box">
+            <img src="{% static 'images/logo1.png' %}" alt="">
+        </div>
+
+
+    <div class="logo-text">
+        <h2>RTM EMPIRE TECH</h2>
+        <p>Building Digital Empires</p>
+    </div>
+</div>
+
+<ul class="nav-links">
+    <li><a href="{% url 'home' %}">Home</a></li>
+    <li><a href="{% url 'about' %}">About</a></li>
+    <li><a href="{% url 'services' %}">Services</a></li>
+    <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+    <li><a href="{% url 'careers' %}">Careers</a></li>
+    <li><a href="{% url 'contact' %}">Contact</a></li>
+</ul>
+
+
+</nav>
+
+<section class="contact-hero">
+    <div class="hero-content">
+        <h1>CONTACT RTM EMPIRE TECH</h1>
+        <p>Let's discuss your next project.</p>
+    </div>
+</section>
+
+<section class="contact-info">
+
+
+<div class="info-card">
+    <h3>Email</h3>
+    <p>info@rtmempiretech.com</p>
+</div>
+
+<div class="info-card">
+    <h3>Phone</h3>
+    <p>+91 8329922350</p>
+</div>
+
+<div class="info-card">
+    <h3>Location</h3>
+    <p>Solapur, Maharashtra, India</p>
+</div>
+
+
+</section>
+
+<section class="contact-form-section">
+
+
+<div class="section-title">
+    <h2>GET IN TOUCH</h2>
+</div>
+
+<form class="contact-form" method="POST">
+    {% csrf_token %}
+
+    <input type="text"
+           name="full_name"
+           placeholder="Full Name"
+           required>
+
+    <input type="email"
+           name="email"
+           placeholder="Email Address"
+           required>
+
+    <input type="text"
+           name="phone"
+           placeholder="Phone Number"
+           required>
+
+    <input type="text"
+           name="subject"
+           placeholder="Subject"
+           required>
+
+    <textarea rows="6"
+              name="message"
+              placeholder="Your Message"
+              required></textarea>
+
+    <button type="submit">
+        Send Message
+    </button>
+</form>
+
+</section>
+
+<section class="business-hours">
+
+
+<div class="section-title">
+    <h2>BUSINESS HOURS</h2>
+</div>
+
+<div class="hours-card">
+    <p>Monday - Friday : 9:00 AM - 6:00 PM</p>
+    <p>Saturday : 10:00 AM - 4:00 PM</p>
+    <p>Sunday : Closed</p>
+</div>
+
+
+</section>
+
+<section class="contact-cta">
+
+
+<h2>Ready To Start Your Project?</h2>
+
+<p>Contact us today and let's build something amazing together.</p>
+
+
+</section>
+
+<footer>
+    © 2026 RTM Empire Tech. All Rights Reserved.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,249 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers | RTM Empire Tech</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/careers.css' %}">
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+    <div class="logo-area">
+
+        <div class="logo-box">
+            <img src="{% static 'images/logo1.png' %}" alt="Logo">
+        </div>
+
+        <div class="logo-text">
+            <h2>RTM EMPIRE TECH</h2>
+            <p>Building Digital Empires</p>
+        </div>
+
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'services' %}">Services</a></li>
+        <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+        <li><a href="{% url 'careers' %}">Careers</a></li>
+    </ul>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="careers-hero">
+
+    <div class="hero-content">
+
+        <h1>CAREERS AT RTM EMPIRE TECH</h1>
+
+        <p>
+            Join our growing team and help build the future of technology.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- OPEN POSITIONS -->
+<!-- OPEN POSITIONS -->
+
+<section class="jobs-section">
+
+    <div class="section-title">
+        <h2>OPEN POSITIONS</h2>
+    </div>
+<div class="section-title">
+        <h2>JOBS OPPORTUNITIES</h2>
+    </div>
+    {% for job in jobs %}
+
+    <div class="empty-card">
+
+        <h3>{{ job.title }}</h3>
+
+        <p>{{ job.description }}</p>
+
+        <p><strong>Location:</strong> {{ job.location }}</p>
+
+        <p><strong>Status:</strong> {{ job.status }}</p>
+
+    </div>
+
+    {% empty %}
+
+    <div class="empty-card">
+
+        <h3>No Current Openings</h3>
+
+        <p>
+            We are not hiring at the moment.
+            Future opportunities will be posted here.
+        </p>
+
+    </div>
+
+    {% endfor %}
+
+</section>
+
+<!-- INTERNSHIP OPPORTUNITIES -->
+
+<section class="internship-section">
+
+    <div class="section-title">
+        <h2>INTERNSHIP OPPORTUNITIES</h2>
+    </div>
+
+    {% for internship in internships %}
+
+    <div class="empty-card">
+
+        <h3>{{ internship.title }}</h3>
+
+        <p>{{ internship.description }}</p>
+
+        <p>
+            <strong>Duration:</strong>
+            {{ internship.duration }}
+        </p>
+
+        <p>
+            <strong>Status:</strong>
+            {{ internship.status }}
+        </p>
+
+    </div>
+
+    {% empty %}
+
+    <div class="empty-card">
+
+        <h3>No Active Internship Openings</h3>
+
+        <p>
+            Internship opportunities will be announced here in the future.
+        </p>
+
+    </div>
+
+    {% endfor %}
+
+</section>
+
+<!-- TALENT POOL -->
+
+<section class="talent-section">
+
+    <div class="section-title">
+        <h2>TALENT POOL REGISTRATION</h2>
+    </div>
+
+    <div class="talent-card">
+
+        <h3>Submit Your Resume</h3>
+
+        <p>
+            Even if there are no openings right now,
+            you can submit your details and we may
+            contact you in the future.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- APPLICATION FORM -->
+
+<section class="form-section">
+
+    <div class="section-title">
+        <h2>APPLICATION FORM</h2>
+    </div>
+
+    <form class="career-form" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    <input type="text" name="full_name" placeholder="Full Name" required>
+
+    <input type="email" name="email" placeholder="Email Address" required>
+
+    <input type="text" name="mobile" placeholder="Mobile Number" required>
+
+    <input type="text" name="qualification" placeholder="Qualification" required>
+
+    <input type="text" name="skills" placeholder="Skills" required>
+
+    <select name="application_type" required>
+        <option value="">Select Application Type</option>
+        <option value="Job">Job</option>
+        <option value="Internship">Internship</option>
+    </select>
+
+    <input type="file" name="resume">
+
+    <button type="submit">
+        Submit Application
+    </button>
+
+</form>
+
+</section>
+
+<!-- BENEFITS -->
+
+<section class="benefits-section">
+
+    <div class="section-title">
+        <h2>WHY JOIN US</h2>
+    </div>
+
+    <div class="benefits-grid">
+
+        <div class="benefit-card">
+            <h3>Growth Opportunities</h3>
+        </div>
+
+        <div class="benefit-card">
+            <h3>Modern Technologies</h3>
+        </div>
+
+        <div class="benefit-card">
+            <h3>Flexible Environment</h3>
+        </div>
+
+        <div class="benefit-card">
+            <h3>Innovation Driven</h3>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="career-cta">
+
+    <h2>Ready To Join RTM Empire Tech?</h2>
+
+    <p>
+        Build your future with innovation and technology.
+    </p>
+
+</section>
+
+<footer>
+    © 2026 RTM Empire Tech. All Rights Reserved.
+</footer>
+
+</body>
+</html>

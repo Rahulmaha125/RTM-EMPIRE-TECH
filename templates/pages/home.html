@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTM Empire Tech</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+
+    <!-- Navbar Start -->
+    <nav class="navbar">
+        <div class="logo-area">
+           
+
+    <div class="logo-box">
+         <img src="{% static 'images/logo1.png' %}" alt="RTM Logo">
+    </div>
+
+            <div class="logo-text">
+                <h2>RTM EMPIRE TECH</h2>
+                <p>Building Digital Empires</p>
+            </div>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+           <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'services' %}">Services</a></li>
+           <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+            <li><a href="{% url 'careers' %}">Careers</a></li>
+           <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+
+        <a href="{% url 'portfolio' %}" class="quote-btn">
+    Get Your Dream Projects
+</a>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Hero Section Start -->
+    <section class="hero">
+
+        <div class="hero-left">
+
+            <h1>
+                WE BUILD <br>
+                <span>DIGITAL EMPIRES</span>
+            </h1>
+
+            <p>
+                We are a creative technology agency delivering modern
+                websites, Django applications and AI powered solutions.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="{% url 'quote' %}" class="quote-btn">
+    Start Your Project
+</a>
+ 
+               
+            </div>
+            
+
+        </div>
+
+        <div class="hero-right">
+
+    <div class="shield">
+
+        <img src="{% static 'images/rtm-logo.png' %}" alt="RTM Empire Tech Logo">
+
+    </div>
+
+</div>
+    <!-- Hero Section End -->
+
+
+</body>
+</html>

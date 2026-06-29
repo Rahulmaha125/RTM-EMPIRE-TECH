@@ -1,0 +1,278 @@
+/* =========================
+   CAREERS HERO
+========================= */
+
+.careers-hero{
+    min-height:60vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    background:
+    linear-gradient(
+    rgba(2,11,45,.88),
+    rgba(2,11,45,.88)
+    ),
+    url("../images/careers-bg.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    padding:50px 20px;
+}
+
+.careers-hero h1{
+    color:#d4af37;
+    font-size:65px;
+    margin-bottom:20px;
+}
+
+.careers-hero p{
+    color:#ddd;
+    font-size:20px;
+}
+
+/* =========================
+   COMMON
+========================= */
+
+.jobs-section,
+.internship-section,
+.talent-section,
+.form-section,
+.benefits-section{
+    padding:90px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    color:#d4af37;
+    font-size:40px;
+}
+
+/* =========================
+   EMPTY CARD
+========================= */
+
+.empty-card{
+    max-width:900px;
+    margin:auto;
+
+    background:#07153f;
+
+    border:1px solid rgba(212,175,55,.25);
+
+    border-radius:20px;
+
+    padding:40px;
+
+    text-align:center;
+}
+
+.empty-card h3{
+    color:#d4af37;
+    margin-bottom:15px;
+}
+
+.empty-card p{
+    color:#ddd;
+    line-height:1.8;
+}
+
+/* =========================
+   TALENT CARD
+========================= */
+
+.talent-card{
+    max-width:900px;
+    margin:auto;
+
+    background:#07153f;
+
+    border:1px solid rgba(212,175,55,.25);
+
+    border-radius:20px;
+
+    padding:40px;
+
+    text-align:center;
+}
+
+.talent-card h3{
+    color:#d4af37;
+    margin-bottom:15px;
+}
+
+.talent-card p{
+    color:#ddd;
+    line-height:1.8;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.career-form{
+    max-width:900px;
+    margin:auto;
+
+    display:grid;
+    gap:20px;
+}
+
+.career-form input,
+.career-form select{
+    width:100%;
+
+    padding:15px;
+
+    background:#07153f;
+
+    border:1px solid rgba(212,175,55,.25);
+
+    border-radius:10px;
+
+    color:#fff;
+
+    font-size:16px;
+}
+
+.career-form input:focus,
+.career-form select:focus{
+    outline:none;
+    border-color:#d4af37;
+}
+
+.career-form button{
+    background:#d4af37;
+
+    color:#000;
+
+    border:none;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.career-form button:hover{
+    transform:translateY(-4px);
+}
+
+/* =========================
+   BENEFITS
+========================= */
+
+.benefits-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+}
+
+.benefit-card{
+    background:#07153f;
+
+    border:1px solid rgba(212,175,55,.25);
+
+    border-radius:18px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:.3s;
+}
+
+.benefit-card:hover{
+    transform:translateY(-8px);
+
+    border-color:#d4af37;
+
+    box-shadow:0 0 25px rgba(212,175,55,.20);
+}
+
+.benefit-card h3{
+    color:#d4af37;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.career-cta{
+    margin:80px 8%;
+
+    background:#07153f;
+
+    border:1px solid rgba(212,175,55,.25);
+
+    border-radius:25px;
+
+    padding:70px 30px;
+
+    text-align:center;
+}
+
+.career-cta h2{
+    color:#d4af37;
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.career-cta p{
+    color:#ddd;
+    font-size:18px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    text-align:center;
+
+    padding:35px;
+
+    border-top:1px solid rgba(212,175,55,.20);
+
+    color:#bbb;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+    .careers-hero h1{
+        font-size:40px;
+    }
+
+    .section-title h2{
+        font-size:30px;
+    }
+
+    .career-cta h2{
+        font-size:30px;
+    }
+
+}

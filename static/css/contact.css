@@ -1,0 +1,247 @@
+/* =========================
+   CONTACT HERO
+========================= */
+
+.contact-hero{
+    min-height:60vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    background:
+    linear-gradient(
+    rgba(2,11,45,.88),
+    rgba(2,11,45,.88)
+    ),
+    url("../images/contact-bg.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    padding:50px 20px;
+}
+
+.contact-hero h1{
+    color:#d4af37;
+    font-size:65px;
+    margin-bottom:20px;
+}
+
+.contact-hero p{
+    color:#ddd;
+    font-size:20px;
+}
+
+/* =========================
+   CONTACT INFO
+========================= */
+
+.contact-info{
+    padding:90px 8%;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+}
+
+.info-card{
+    background:#07153f;
+
+    border:1px solid rgba(212,175,55,.25);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:.3s;
+}
+
+.info-card:hover{
+    transform:translateY(-8px);
+
+    border-color:#d4af37;
+
+    box-shadow:0 0 25px rgba(212,175,55,.20);
+}
+
+.info-card h3{
+    color:#d4af37;
+    margin-bottom:15px;
+}
+
+.info-card p{
+    color:#ddd;
+}
+
+/* =========================
+   FORM SECTION
+========================= */
+
+.contact-form-section{
+    padding:90px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    color:#d4af37;
+    font-size:40px;
+}
+
+.contact-form{
+    max-width:900px;
+    margin:auto;
+
+    display:grid;
+    gap:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+
+    padding:15px;
+
+    background:#07153f;
+
+    border:1px solid rgba(212,175,55,.25);
+
+    border-radius:10px;
+
+    color:white;
+
+    font-size:16px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    outline:none;
+    border-color:#d4af37;
+}
+
+.contact-form button{
+    background:#d4af37;
+
+    color:black;
+
+    border:none;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.contact-form button:hover{
+    transform:translateY(-4px);
+}
+
+/* =========================
+   BUSINESS HOURS
+========================= */
+
+.business-hours{
+    padding:90px 8%;
+}
+
+.hours-card{
+    max-width:700px;
+    margin:auto;
+
+    background:#07153f;
+
+    border:1px solid rgba(212,175,55,.25);
+
+    border-radius:20px;
+
+    padding:40px;
+
+    text-align:center;
+}
+
+.hours-card p{
+    color:#ddd;
+    margin:12px 0;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.contact-cta{
+    margin:80px 8%;
+
+    background:#07153f;
+
+    border:1px solid rgba(212,175,55,.25);
+
+    border-radius:25px;
+
+    padding:70px 30px;
+
+    text-align:center;
+}
+
+.contact-cta h2{
+    color:#d4af37;
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.contact-cta p{
+    color:#ddd;
+    font-size:18px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    text-align:center;
+
+    padding:35px;
+
+    border-top:1px solid rgba(212,175,55,.20);
+
+    color:#bbb;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+    .contact-hero h1{
+        font-size:40px;
+    }
+
+    .section-title h2{
+        font-size:30px;
+    }
+
+    .contact-cta h2{
+        font-size:30px;
+    }
+
+}

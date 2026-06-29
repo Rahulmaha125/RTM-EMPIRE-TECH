@@ -1,0 +1,150 @@
+.about-hero{
+    min-height:50vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:60px 20px;
+    background:linear-gradient(rgba(2,11,45,.85),
+    rgba(2,11,45,.85)),
+    url("../images/hero-bg.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+.about-hero h1{
+    font-size:60px;
+    color:#d4af37;
+    margin-bottom:15px;
+}
+
+.about-hero p{
+    font-size:18px;
+    color:#ddd;
+}
+
+.section-heading{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-heading h2{
+    color:#d4af37;
+    font-size:36px;
+}
+
+.about-company{
+    padding:80px 8%;
+}
+
+.company-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.company-card{
+    background:#07153f;
+    border:1px solid rgba(212,175,55,.25);
+    border-radius:15px;
+    padding:30px;
+}
+
+.company-card h3{
+    color:#d4af37;
+    margin-bottom:15px;
+}
+
+.company-card p{
+    line-height:1.8;
+    color:#ddd;
+}
+
+.mission-section{
+    padding:0 8% 80px;
+}
+
+.mission-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.mission-card{
+    background:#07153f;
+    border:1px solid rgba(212,175,55,.25);
+    border-radius:15px;
+    padding:30px;
+}
+
+.mission-card h3{
+    color:#d4af37;
+    margin-bottom:15px;
+}
+
+.founder-section{
+    padding:80px 8%;
+}
+
+.founder-card{
+    max-width:800px;
+    margin:auto;
+    text-align:center;
+    background:#07153f;
+    border:1px solid rgba(212,175,55,.25);
+    border-radius:20px;
+    padding:40px;
+}
+
+.founder-card img{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #d4af37;
+    margin-bottom:25px;
+}
+
+.founder-card h3{
+    color:#d4af37;
+    font-size:32px;
+}
+
+.founder-card span{
+    display:block;
+    margin:10px 0 20px;
+    color:#ccc;
+}
+
+.founder-card p{
+    color:#ddd;
+    line-height:1.8;
+}
+
+.values-section{
+    padding:80px 8%;
+}
+
+.values-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.value-card{
+    background:#07153f;
+    border:1px solid rgba(212,175,55,.25);
+    border-radius:15px;
+    padding:30px;
+    text-align:center;
+}
+
+.value-card h3{
+    color:#d4af37;
+    margin-bottom:15px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+}
